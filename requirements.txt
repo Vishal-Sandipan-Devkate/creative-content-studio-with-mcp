@@ -1,0 +1,23 @@
+# Creative Content Studio - Full Installation
+# All features included (thumbnails, QR codes, social cards, video, TTS)
+
+# Core Dependencies
+openai>=2.16.0
+pillow>=11.3.0
+qrcode>=8.2
+python-dotenv>=1.2.1
+
+# Video Montage Feature
+moviepy>=2.2.1
+imageio>=2.37.0
+imageio-ffmpeg>=0.6.0
+numpy>=2.4.0
+
+# Text-to-Speech Feature (Windows)
+pyttsx3>=2.99
+pywin32>=311
+comtypes>=1.4.0
+
+# Note: On non-Windows systems, pyttsx3 may require different dependencies
+# For Linux: sudo apt-get install espeak
+# For Mac: Uses native speech synthesisexit
