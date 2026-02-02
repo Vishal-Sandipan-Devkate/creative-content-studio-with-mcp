@@ -1,21 +1,4 @@
-"""
-Creative Content Studio MCP Server - FIXED VERSION
-===================================================
-An MCP server that provides 5 AI-powered creative content generation tools.
 
-FIXES APPLIED:
-1. Removed unnecessary async from non-async functions
-2. Ensured consistent return format (plain strings, not JSON)
-3. Added better error handling
-4. Fixed tool function signatures
-
-Tools:
-1. generate_thumbnail - Create custom image thumbnails with text overlays
-2. create_video_montage - Combine images into a video with transitions
-3. text_to_speech - Convert text to audio files
-4. generate_qr_code - Create styled QR codes with custom colors
-5. create_social_card - Generate social media preview cards
-"""
 
 from mcp.server.fastmcp import FastMCP
 from PIL import Image, ImageDraw, ImageFont
@@ -61,7 +44,7 @@ def get_font(size=40):
         except:
             return ImageFont.load_default()
 
-
+# written by Atharva Kasturi
 @server.tool()
 def generate_thumbnail(
     text: str,
@@ -158,7 +141,7 @@ def generate_thumbnail(
             "message": f"Failed to generate thumbnail: {str(e)}"
         })
 
-
+# written by Vishal Devkate
 @server.tool()
 def create_video_montage(
     image_paths: list[str],
@@ -248,7 +231,7 @@ def create_video_montage(
             "message": f"Failed to create video montage: {str(e)}"
         })
 
-
+# written by Avanti Shinde
 @server.tool()
 def text_to_speech(
     text: str,
@@ -320,7 +303,7 @@ def text_to_speech(
             "message": f"Failed to generate speech: {str(e)}"
         })
 
-
+# written by Sneha Barage
 @server.tool()
 def generate_qr_code(
     data: str,
@@ -397,7 +380,7 @@ def generate_qr_code(
             "message": f"Failed to generate QR code: {str(e)}"
         })
 
-
+# written by Vishal Devkate
 @server.tool()
 def create_social_card(
     title: str,

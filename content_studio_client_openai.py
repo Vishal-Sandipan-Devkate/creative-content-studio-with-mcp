@@ -1,22 +1,4 @@
-"""
-Creative Content Studio AI Agent Client - OPENAI VERSION - FIXED
-==================================================================
-An AI agent that autonomously uses the Content Studio MCP server to create multimedia content.
-Uses OpenAI's GPT-4o-mini (affordable and capable!)
 
-FIXES APPLIED:
-1. Better MCP result extraction with fallbacks
-2. Improved error handling for tool calls
-3. Better logging for debugging
-4. Proper cleanup on exit
-5. FIXED INDENTATION - all methods properly inside class
-
-Features:
-- Dynamic tool discovery
-- Multi-step reasoning with tools
-- Context preservation across tool calls
-- Intelligent decision-making about which tools to use
-"""
 
 import asyncio
 import json
